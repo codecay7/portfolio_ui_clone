@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  color: rgb(255, 254, 254);
+  font-family: monospace;
+}
+
+main {
+  scroll-behavior: smooth;
+
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+nav {
+  min-height: 10vh;
+  width: 100%;
+  background-color: #1e1e1d;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.nav-links i {
+  display: none;
+}
+.nav-links a:hover {
+  color: yellowgreen;
+  transition: all ease-in-out;
+  transform: scale(1.1);
+}
+
+ul {
+  font-size: 1.5vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5vw;
+  margin-right: 15vw;
+}
+ul a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  font-size: 2.5vw;
+  margin-left: 8vw;
+  font-family: cursive;
+}
+.main {
+  padding: 2vw;
+  min-height: 80vh;
+  width: 100%;
+  background-color: #161513;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero {
+  min-height: 80vh;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero img {
+  filter: drop-shadow(10px 10px 20px#754EF9);
+
+  height: 40vh;
+  width: 20vw;
+}
+.hero h1 {
+  font-size: 3.4vw;
+  text-align: center;
+}
+.hero span {
+  font-size: 3.4vw;
+  font-weight: bold;
+  background: linear-gradient(to right, #b47160, #9198e8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero p {
+  text-align: center;
+  font-size: 1.2vw;
+}
+.buttons {
+  min-height: 2vh;
+  max-width: 100vw;
+  margin-top: 4vw;
+  display: flex;
+  gap: 1.5vw;
+}
+.buttons button {
+  padding: 1vw 2vw;
+  font-size: 1.1vw;
+  font-weight: 600;
+  background-color: #161513;
+  color: white;
+  border: 2px solid yellowgreen;
+  border-radius: 25px 25px 25px 25px;
+}
+button:hover {
+  background-color: red;
+  transition: ease-in-out;
+  color: #161513;
+  background-color: white;
+
+  transition-duration: 10ms;
+}
+
+.experiences-with {
+  min-height: 4vh;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.experiences h2 {
+  font-size: 3vw;
+}
+.images {
+  max-height: 9vh;
+  margin-top: 2vw;
+  display: flex;
+  gap: 10vw;
+}
+
+.images img:hover {
+  transform: scale(1.1);
+  transition-duration: 3000ms;
+  transition: all ease-in-out;
+  filter: grayscale(1.3);
+}
+.projects {
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 4vw;
+  margin-top: 4vw;
+  color: #b47160;
+}
+
+.cards {
+  min-height: 50vh;
+  max-width: 80vw;
+  padding-top: 50px;
+  max-width: 100vw;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 4vw;
+  justify-content: space-around;
+  align-items: center;
+}
+.card {
+  height: 45vh;
+
+  width: 30vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15px 15px;
+  overflow: hidden;
+}
+
+.card-top {
+  min-height: 75%;
+  width: 100%;
+  /* background-position: center; */
+  /* background-color: rgb(181, 181, 237); */
+}
+.card-bottom {
+  color:black;
+  min-height: 20vh;
+  width: 100%;
+  /* background-color: red; */
+  background-color:yellowgreen;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.card-bottom:hover {
+  background-color:blue;
+  color: white;
+}
+.card:hover {
+  transform: scale(1.005);
+  transition: all ease-in-out;
+  transition-duration: 50ms;
+}
+
+.card-top img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.Experiences-from {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 10vh;
+  min-height: 60vh;
+  max-width: 80%;
+  padding: 1vw;
+  color: #5a5a56;
+}
+.Experiences-from h1 {
+  font-size: 4.5vw;
+  color: blueviolet;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+.Experiences-from p {
+  font-size: 1.2vw;
+}
+.Experiences-from h2 {
+  font-size: 5.8vw;
+}
+.Experiences-from h4 {
+  color: antiquewhite;
+  font-size: 1.8vw;
+}
+.Exp {
+  margin-top: 1vh;
+  min-height: 20vh;
+}
+.from-top {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+.from-top h2 {
+  font-size: 2vw;
+  color:yellowgreen;
+}
+
+footer {
+  align-items: center;
+  /* padding-bottom: 40px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x:hidden ;
+  justify-content: flex;
+  gap: 5vw;
+  padding: 10vw 10vh;
+  min-height: 40vh;
+  width: 100%;
+  background-color: #1e1e1d;
+}
+.socials {
+  display: flex;
+  gap: 3vw;
+  font-size: 3vw;
+  color: yellowgreen;
+}
+i:hover {
+  color: white;
+}
+.Exp i {
+  color: #9198e8;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero {
+    min-height: 80svh;
+    max-width: 100%;
+  }
+  .nav-links i {
+    display: contents;
+    font-size: 1.7rem;
+    display: flex;
+    margin-right: 15px;
+  }
+  ul {
+    display: none;
+  }
+  nav {
+    min-height: 7vh;
+    width: 100%;
+  }
+  .logo {
+    font-size: 7.5vw;
+    margin-left: 4%;
+  }
+  .hero img {
+    filter: drop-shadow(10px 10px 20px#754EF9);
+    height: 37vh;
+    width: 80vw;
+  }
+
+  .hero h1 {
+    padding-top: 6vw;
+    font-size: 7.4vw;
+  }
+  .hero span {
+    font-size: 10vw;
+  }
+
+  .hero p {
+    color: #777773;
+    font-size: 2.5vw;
+    padding-top: 10px;
+  }
+  .hero button {
+    padding: 10px 15px;
+    font-size: 3.5vw;
+  }
+
+  .buttons {
+    gap: 10px;
+  }
+
+  .images {
+    padding-top: 20%;
+    min-height: 70vh;
+    flex-direction: column;
+  }
+  .projects h2 {
+    margin-top: 50px;
+    font-size: 10vw;
+  }
+  .cards {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .card {
+    height: 32vh;
+
+    width: 95vw;
+  }
+
+  .Experiences-from h1 {
+    font-size: 10vw;
+  }
+  .Experiences-from {
+    width: 100vw;
+    padding: 0%;
+  }
+
+  .from-top h2 {
+    font-size: 4vw;
+    color: yellowgreen;
+  }
+  .from-top h4 {
+    font-size: 3vw;
+    color: rgb(253, 252, 255);
+  }
+
+  .from-top {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .Experiences-from p {
+    margin-top: 10px;
+    font-size: 2vw;
+  }
+
+  .socials{
+    gap: 10vw;
+    text-align: center;
+    justify-content: center;
+    
+   margin-left: 3%;
+    font-size: 10vw;
+  }
+  footer{
+    
+    flex-wrap: wrap;
+    padding-left: 17%;
+  }
+
+}
